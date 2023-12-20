@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG-FREE-ZONE | FAQs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      .about .title {
+          font-size: 30px;
+          margin-top: 70px;
+      }
+      
+      .faqs-container {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+
+      .faq {
+        background-color: transparent;
+        border: 1px solid #9FA4A8;
+        border-radius: 10px;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        margin: 20px 0;
+        transition: 0.3s ease;
+        width: 700px;
+      }
+
+      .faq.active {
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+      }
+
+      .faq.active::after, .faq.active::before {
+        color: #2ecc71;
+        content: '\f075';
+        font-family: 'Font Awesome 5 Free';
+        font-size: 7rem;
+        position: absolute;
+        opacity: 0.2;
+        top: 20px;
+        left: 20px;
+        z-index: 0;
+      }
+
+      .faq.active::before {
+        color: #3498db;
+        top: -10px;
+        left: -30px;
+        transform: rotateY(180deg);
+      }
+
+      .faq-title {
+        margin: 0 35px 0 0;
+        text-align: left;
+      }
+
+      .faq-text {
+        display: none;
+        margin: 30px 0 0;
+      }
+
+      .faq.active .faq-text {
+        display: block;
+      }
+
+      .faq-toggle {
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        padding: 0;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        height: 30px;
+        width: 30px;
+      }
+
+      .faq-toggle:focus {
+        outline: none;
+      }
+
+      .faq.active .faq-toggle {
+        background-color: #9FA4A8;
+      }
+
+      .faq-toggle .fa-times {
+        display: none;
+      }
+
+      .faq.active .faq-toggle .fa-times {
+        display: block;
+      }
+
+      .faq-toggle .fa-chevron-down {
+        color: #83888E;
+      }
+
+      .faq.active .faq-toggle .fa-chevron-down {
+        display: none;
+      }
+      @media only screen and (max-width: 768px) {
+          .faq {
+            width: 100%; /* Set the width to 100% on smaller screens */
+            max-width: none; /* Remove the maximum width */
+          }
+        
+          .faqs-container {
+            max-width: 100%; /* Adjust the container width if necessary */
+          }
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <button class="button" data-text="Awesome">
+          <span class="actual-text">&nbsp;rag&nbsp;free&nbsp;zone&nbsp;</span>
+          <span aria-hidden="true" class="hover-text">&nbsp;rag&nbsp;free&nbsp;zone&nbsp;</span>
+      </button>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="index.php#about">About</a></li>
+        <li class="services">
+          <a href="#">Services<i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+              <a href="register.php">Raise Complaint</a>
+              <a href="index.php#check-complaint">Check Complaint Status</a>
+          </div>
+        </li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="index.php#contact">Contact</a></li>
+        <li><a href="register.php">Raise Complaint</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  
+  <section class="about" id="about">
+    <div class="content">
+
+      <div class="title">FREQUENTLY ASKED QUESTIONS</div>
+
+      <div class="faqs-container">
+        <div class="faq active">
+          <h3 class="faq-title">
+            Q: What is ragging?
+          </h3>
+          <p class="faq-text">
+            Ragging is an act of teasing, tormenting, or harassing new students in educational institutions. It is strictly prohibited and illegal in many places.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="faq">
+          <h3 class="faq-title">
+            Q: How can I report ragging?
+          </h3>
+          <p class="faq-text">
+            You can report ragging by using our "Raise Complaint" service. Visit the "Services" section for more information.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="faq">
+          <h3 class="faq-title">
+            Q: Is ragging punishable by law?
+          </h3>
+          <p class="faq-text">
+            Yes, ragging is punishable by law in many countries. It can lead to serious consequences, including imprisonment.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="faq">
+          <h3 class="faq-title">
+            Q: What are the penalties for ragging?
+          </h3>
+          <p class="faq-text">
+            Penalties for ragging can include suspension, expulsion, fines, or even legal actions. The severity of penalties varies depending on the institution and the nature of the ragging.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="faq">
+          <h3 class="faq-title">
+            Q: Is there a way to report ragging anonymously?
+          </h3>
+          <p class="faq-text">
+            Yes, we offer an anonymous reporting feature on our portal to protect your identity while reporting ragging incidents. Your safety is our priority.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">
+            Q: How can I raise awareness about ragging?
+          </h3>
+          <p class="faq-text">
+            You can raise awareness about ragging by participating in anti-ragging campaigns, workshops, and educating others about its consequences. You can also use social media to spread the message against ragging.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="faq">
+          <h3 class="faq-title">
+            Q: How can parents ensure their child's safety from ragging?
+          </h3>
+          <p class="faq-text">
+            Parents should have open communication with their children about the risks of ragging, encourage them to report any incidents, and support their educational institution's anti-ragging policies.
+          </p>
+          <button class="faq-toggle">
+            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="footer">
+    <div class="inner-footer">
+
+      <div class="footer-items">
+        <h1>Rag Free Zone </h1>
+        <p>Your Anti-Ragging Solution</p>
+      </div>
+  
+      <div class="footer-items">
+        <h3>Quick Links</h3>
+        <div class="border1"></div>
+          <ul>
+            <a href="index.php"><li>Home</li></a>
+            <a href="index.php#contact"><li>Contact</li></a>
+            <a href="index.php#about"><li>About</li></a>
+            <a href="admin_login.php"><li>Admin Login</li></a>
+          </ul>
+      </div>
+  
+      <div class="footer-items">
+        <h3>Sitemap</h3>
+        <div class="border1"></div>
+          <ul>
+            <a href="https://www.ugc.gov.in/page/Ragging-Related-Circulars.aspx"><li>Ragging Related Circulars</li></a>
+            <a href="register.php"><li>Register Complaint</li></a>
+            <a href="feedback.html"><li>Give Your Feedback</li></a>
+            <a href="FAQ.html"><li>Frequently Asked Questions</li></a>
+            <a href="video.html"><li>Videos On Ragging</li></a>
+          </ul>
+      </div>
+  
+      <div class="footer-items">
+        <h3>Contact us</h3>
+        <div class="border1"></div>
+          <ul>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>1800-111-1111</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>helpline@ragfreezone.in</li>
+          </ul> 
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      Copyright &copy; Rag Free Zone 2023.
+    </div>
+  </div>
+
+  <script id="pixel-chaty" async="true" src="https://cdn.chaty.app/pixel.js?id=SEKzOMPE"></script>
+  <script src="/js/index.js"></script>
+  <script>
+    const faqContainers = document.querySelectorAll('.faq');
+  
+    faqContainers.forEach(container => {
+      const toggleButton = container.querySelector('.faq-toggle');
+  
+      toggleButton.addEventListener('click', () => {
+        if (container.classList.contains('active')) {
+          // Close the clicked question
+          container.classList.remove('active');
+        } else {
+          // Close any other open questions
+          faqContainers.forEach(faq => {
+            faq.classList.remove('active');
+          });
+          // Open the clicked question
+          container.classList.add('active');
+        }
+      });
+    });
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        var disclaimer = document.querySelector("img[alt='www.000webhost.com']"); 
+        if(disclaimer){ 
+            disclaimer.remove(); 
+        }
+    });
+  </script>
+  
+</body>
+</html>

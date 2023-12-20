@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG-FREE-ZONE | Videos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        .about .title {
+            font-size: 30px;
+            margin-top: 70px;
+            text-transform: uppercase;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row > div {
+            width: 100%;
+        }
+        @media (min-width: 768px) {
+            .row > div {
+                width: 50%;
+            }
+        }
+        @media (min-width: 992px) {
+            .row > div {
+                width: 33.33%;
+            }
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio for videos */
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .caption {
+            text-align: center; /* Center-align text under videos */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <button class="button" data-text="Awesome">
+          <span class="actual-text">&nbsp;rag&nbsp;free&nbsp;zone&nbsp;</span>
+          <span aria-hidden="true" class="hover-text">&nbsp;rag&nbsp;free&nbsp;zone&nbsp;</span>
+      </button>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="index.php#about">About</a></li>
+        <li class="services">
+          <a href="#">Services<i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+              <a href="register.php">Raise Complaint</a>
+              <a href="index.php#check-complaint">Check Complaint Status</a>
+          </div>
+        </li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="index.php#contact">Contact</a></li>
+        <li><a href="register.php">Raise Complaint</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about" id="about">
+    <div class="content">
+        <div class="title">Videos On Ragging</div>
+        <div class="row">
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PKUZ6HUiLFY" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Towards Ragging Free Campus</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xwZZh7jkysM" allowfullscreen></iframe>
+                </div>
+                <p class="caption">STOP Human Rights Violations</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WkSr0T8s__I" allowfullscreen></iframe>
+                </div>
+                <p class="caption"><span> Save Appeals -</span> No More Ragging</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/BjcynOHs0qQ" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Anti Ragging Documentary</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gSCYsCzOoMs" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Anti Ragging Campaign</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zur1BmnjeR0" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Offender</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sVe5Q6RxJNQ" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Parents</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xaV0NVF5f-g" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Victim</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/nrhYWqnu9pk" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Ragging:An Avoidable Crime-1</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iXPCplaCoNU" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Ragging:An Avoidable Crime-2</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FHQZ5DFlT1I" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Antiragging Part-1</p>
+            </div>
+            <div>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0XavH6qTby4" allowfullscreen></iframe>
+                </div>
+                <p class="caption">Antiragging Part-2</p>
+            </div>
+            
+        </div>
+    </div>
+  </section>
+
+  <div class="footer">
+    <div class="inner-footer">
+  
+      <div class="footer-items">
+        <h1>Rag Free Zone </h1>
+        <p>Your Anti-Ragging Solution</p>
+      </div>
+  
+      <div class="footer-items">
+        <h3>Quick Links</h3>
+        <div class="border1"></div>
+          <ul>
+            <a href="index.php"><li>Home</li></a>
+            <a href="index.php#contact"><li>Contact</li></a>
+            <a href="index.php#about"><li>About</li></a>
+            <a href="admin_login.php"><li>Admin Login</li></a>
+          </ul>
+      </div>
+  
+      <div class="footer-items">
+        <h3>Sitemap</h3>
+        <div class="border1"></div>
+          <ul>
+            <a href="https://www.ugc.gov.in/page/Ragging-Related-Circulars.aspx"><li>Ragging Related Circulars</li></a>
+            <a href="register.php"><li>Register Complaint</li></a>
+            <a href="feedback.html"><li>Give Your Feedback</li></a>
+            <a href="FAQ.html"><li>Frequently Asked Questions</li></a>
+            <a href="video.html"><li>Videos On Ragging</li></a>
+          </ul>
+      </div>
+  
+      <div class="footer-items">
+        <h3>Contact us</h3>
+        <div class="border1"></div>
+          <ul>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>1800-111-1111</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>helpline@ragfreezone.in</li>
+          </ul> 
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      Copyright &copy; Rag Free Zone 2023.
+    </div>
+  </div>
+
+  <script id="pixel-chaty" async="true" src="https://cdn.chaty.app/pixel.js?id=SEKzOMPE"></script>
+  <script src="/js/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        var disclaimer = document.querySelector("img[alt='www.000webhost.com']"); 
+        if(disclaimer){ 
+            disclaimer.remove(); 
+        }
+    });
+  </script>
+</body>
+</html>

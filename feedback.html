@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG-FREE-ZONE | Feedback</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+        #contact .content {
+            margin-top: 50px;
+        }
+
+        #contact .content h1{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <button class="button" data-text="Awesome">
+          <span class="actual-text">&nbsp;rag&nbsp;free&nbsp;zone&nbsp;</span>
+          <span aria-hidden="true" class="hover-text">&nbsp;rag&nbsp;free&nbsp;zone&nbsp;</span>
+      </button>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="index.php#about">About</a></li>
+        <li class="services">
+          <a href="#">Services<i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown-content">
+              <a href="register.php">Raise Complaint</a>
+              <a href="index.php#check-complaint">Check Complaint Status</a>
+          </div>
+        </li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="index.php#contact">Contact</a></li>
+        <li><a href="register.php">Raise Complaint</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  
+  <section id="contact">
+    <div class="content">
+      <h1>Feedback</h1>
+      <p>This form is only for your valuable feedbacks related to this website.</p><br>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile No.:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="Please enter a valid phone number." placeholder="Phone Number" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+            <label for="state">State (India):</label>
+            <select id="state" name="state" required>
+                <option value="" selected disabled hidden>Select State</option>
+                <option value="ANDAMAN AND NICOBAR ISLANDS">ANDAMAN AND NICOBAR ISLANDS</option>
+                <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+                <option value="ASSAM">ASSAM</option>
+                <option value="BIHAR">BIHAR</option>
+                <option value="CHHATTISGARH">CHHATTISGARH</option>
+                <option value="CHANDIGARH">CHANDIGARH</option>
+                <option value="DELHI">DELHI</option>
+                <option value="THE DADRA AND NAGAR HAVELI AND DAMAN AND DIU">THE DADRA AND NAGAR HAVELI AND DAMANAND DIU</option>
+                <option value="GOA">GOA</option>
+                <option value="GUJARAT">GUJARAT</option>
+                <option value="HARYANA">HARYANA</option>
+                <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+                <option value="JAMMU AND KASHMIR">JAMMU AND KASHMIR</option>
+                <option value="JHARKHAND">JHARKHAND</option>
+                <option value="KARNATAKA">KARNATAKA</option>
+                <option value="KERALA">KERALA</option>
+                <option value="LAKSHADWEEP">LAKSHADWEEP</option>
+                <option value="MEGHALAYA">MEGHALAYA</option>
+                <option value="MAHARASHTRA">MAHARASHTRA</option>
+                <option value="MANIPUR">MANIPUR</option>
+                <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+                <option value="MIZORAM">MIZORAM</option>
+                <option value="NAGALAND">NAGALAND</option>
+                <option value="ORISSA">ORISSA</option>
+                <option value="PUNJAB">PUNJAB</option>
+                <option value="PUDUCHERRY">PUDUCHERRY</option>
+                <option value="RAJASTHAN">RAJASTHAN</option>
+                <option value="SIKKIM">SIKKIM</option>
+                <option value="TAMIL NADU">TAMIL NADU</option>
+                <option value="TELANGANA">TELANGANA</option>
+                <option value="TRIPURA">TRIPURA</option>
+                <option value="UTTARAKHAND">UTTARAKHAND</option>
+                <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+                <option value="WEST BENGAL">WEST BENGAL</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" name="address" id="address" placeholder="Address" maxlength="100" autocomplete="off">
+        </div>
+        <div class="form-group">
+            <label for="pin">Pin Code:</label>
+            <input type="text" name="pin" id="pin" placeholder="Pin Code" autocomplete="off" required oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" maxlength="6">
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your Email" autocomplete="off" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Feedback:</label>
+          <textarea id="message" name="message" placeholder="Your Feedback..." rows="4" autocomplete="off" required></textarea>
+        </div>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </div>
+  </section>
+  
+  <div class="footer">
+    <div class="inner-footer">
+  
+      <div class="footer-items">
+        <h1>Rag Free Zone </h1>
+        <p>Your Anti-Ragging Solution</p>
+      </div>
+  
+      <div class="footer-items">
+        <h3>Quick Links</h3>
+        <div class="border1"></div>
+          <ul>
+            <a href="index.php"><li>Home</li></a>
+            <a href="index.php#contact"><li>Contact</li></a>
+            <a href="index.php#about"><li>About</li></a>
+            <a href="admin_login.php"><li>Admin Login</li></a>
+          </ul>
+      </div>
+  
+      <div class="footer-items">
+        <h3>Sitemap</h3>
+        <div class="border1"></div>
+          <ul>
+            <a href="https://www.ugc.gov.in/page/Ragging-Related-Circulars.aspx"><li>Ragging Related Circulars</li></a>
+            <a href="register.php"><li>Register Complaint</li></a>
+            <a href="feedback.html"><li>Give Your Feedback</li></a>
+            <a href="FAQ.html"><li>Frequently Asked Questions</li></a>
+            <a href="video.html"><li>Videos On Ragging</li></a>
+          </ul>
+      </div>
+  
+      <div class="footer-items">
+        <h3>Contact us</h3>
+        <div class="border1"></div>
+          <ul>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i>XYZ, abc</li>
+            <li><i class="fa fa-phone" aria-hidden="true"></i>1800-111-1111</li>
+            <li><i class="fa fa-envelope" aria-hidden="true"></i>helpline@ragfreezone.in</li>
+          </ul> 
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      Copyright &copy; Rag Free Zone 2023.
+    </div>
+  </div>
+
+  <script id="pixel-chaty" async="true" src="https://cdn.chaty.app/pixel.js?id=SEKzOMPE"></script>
+  <script src="/js/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        var disclaimer = document.querySelector("img[alt='www.000webhost.com']"); 
+        if(disclaimer){ 
+            disclaimer.remove(); 
+        }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    color: #a03333; /* White text color */
+    margin-top: 15px; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Gray borders */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333; /* Dark background for header cells */
+    color: #fff; /* White text color */
+}
+
+.hidden-details {
+    display: none;
+}
+
+
